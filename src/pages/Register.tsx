@@ -25,7 +25,7 @@ export default function Register(){
     setPassword(event.target.value)
   }
   async function onClickHandler(){
-    const response = await axios.post( "http://16.171.57.79:3000/api/v1/api/v1/users/register",{
+    const response = await axios.post( "https://amanasati.me/app3000/api/v1/users/register",{
       name,email,password
     })
     if(!response){

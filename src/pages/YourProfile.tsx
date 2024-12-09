@@ -14,7 +14,7 @@ export default function YourProfile() {
     const [userData , setUserData] = useState<userDatatype>()
     useEffect(()=>{
         const getUserData = async()=>{
-            const response = await axios.get('https://16.171.57.79:3000/api/v1/users/userDetails',{
+            const response = await axios.get('https://amanasati.me/app3000/api/v1/users/userDetails',{
                 params :{ id : id}
             })
             if(!response){

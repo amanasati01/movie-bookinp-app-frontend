@@ -47,7 +47,7 @@ export default function SeatLayout() {
       }
       try {
         const response = await axios.post(
-          "http://16.171.57.79:3000/api/v1/api/v1/tickets/seatsData",
+          "https://amanasati.me/app3000/api/v1/api/v1/tickets/seatsData",
           {
             id: theaterid,
             movieName : paramMovieName,
@@ -106,7 +106,7 @@ export default function SeatLayout() {
   }, [selectFinalized]); 
   useEffect(() => {
       (async () => {
-        const res = await axios.post('http://16.171.57.79:3000/api/v1//api/v1/tickets/make-seat-available', {
+        const res = await axios.post('https://amanasati.me/app3000/api/v1//api/v1/tickets/make-seat-available', {
           id: idToAvailable,
         });
         if(res){

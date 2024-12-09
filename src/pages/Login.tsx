@@ -22,7 +22,7 @@ export default function Login() {
   async function onClickHandler() {
     try {
       const response = await axios.post(
-        "http://16.171.57.79:3000/api/v1/users/login",
+        "https://amanasati.me/app3000/api/v1/users/login",
         {
           email,
           password,

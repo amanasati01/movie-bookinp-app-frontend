@@ -25,7 +25,7 @@ export default function YourTickets() {
   useEffect(() => {
     const getUserData = async () => {
       try {
-        const response = await axios.get('https://16.171.57.79:3000/api/v1/users/ticketDetails', {
+        const response = await axios.get('https://amanasati.me/app3000/api/v1/users/ticketDetails', {
           params: { id: id },
         });
         if (!response) {

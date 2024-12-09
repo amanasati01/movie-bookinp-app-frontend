@@ -27,7 +27,7 @@ function YourComponent() {
     let isMounted = true; 
     async function fetchTheaterData() {
       try {
-        const response = await axios.get('https://16.171.57.79:5000/theaters', {
+        const response = await axios.get('https://amanasati.me/app5000/theaters', {
           params: {
             longitude: Longitude,
             latitude: Latitude,

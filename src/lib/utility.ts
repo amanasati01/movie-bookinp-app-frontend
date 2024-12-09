@@ -9,7 +9,7 @@ export async function getData(theaterid : RecoilState<number> , showTime : strin
     }
     console.log("theaterid ", theaterid);
     try {
-      const response = await axios.post('http://16.171.57.79:3000/api/v1/api/v1/tickets/seatsData', {
+      const response = await axios.post('https://amanasati.me/app3000/api/v1/api/v1/tickets/seatsData', {
         id: theaterid,
         movieName,
         showTime,
@@ -24,7 +24,7 @@ export async function getData(theaterid : RecoilState<number> , showTime : strin
 export async function getSeatData( theaterid : number, movieName : string, showTime : string, lastUpdated : Date) {
   try {
     const response = await axios.post(
-      "http://16.171.57.79:3000/api/v1/api/v1/tickets/seatsData",
+      "https://amanasati.me/app3000/api/v1/api/v1/tickets/seatsData",
       {
         id: theaterid,
         movieName,
@@ -43,7 +43,7 @@ export async function getSeatData( theaterid : number, movieName : string, showT
 export async function blockTheSeat( idArr : number[]) {
   try {
     const response = await axios.post(
-      "http://16.171.57.79:3000/api/v1/api/v1/tickets/block-the-seat",
+      "https://amanasati.me/app3000/api/v1/api/v1/tickets/block-the-seat",
       {
         id : idArr
       },
@@ -58,7 +58,7 @@ export async function bookTicket( idArr : number[],movie:string,buyerId:number,s
   try {
     
     const response = await axios.post(
-      "http://16.171.57.79:3000/api/v1/api/v1/tickets/book-ticket",
+      "https://amanasati.me/app3000/api/v1/api/v1/tickets/book-ticket",
       {
         id : idArr,
         movie,
