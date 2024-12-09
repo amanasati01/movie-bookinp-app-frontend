@@ -17,7 +17,7 @@ export default function Card({ name }: { name: string }): JSX.Element {
 
   async function clickHandler(name: string, location: string, showTime: string, movieName: string) {
     try {
-      const theater = await axios.post('http://16.171.57.79:3000/api/v1/tickets/generate-theater', {
+      const theater = await axios.post('https://amanasati.me/app3000/api/v1/tickets/generate-theater', {
         name,
         location,
         showTime,
